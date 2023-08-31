@@ -13,10 +13,10 @@ context_uri= ""
 
 #Initializing Spotipy client with an OAuth Manager
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id=client_id
-    ,client_secret=client_secret
-    ,redirect_uri=redirect_uri
-    ,scope=scope))
+    client_id=client_id,
+    client_secret=client_secret,
+    redirect_uri=redirect_uri,
+    scope=scope))
 
 #Begins playing a playlist
 def playPlaylist(sp,device,context_uri,offset,ms):
